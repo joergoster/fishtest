@@ -159,8 +159,8 @@ def kill_process(p):
     p.kill()
 
 def adjust_tc(tc, base_nps, concurrency):
-  factor = 1600000.0 / base_nps
-  if base_nps < 700000:
+  factor = 1700000.0 / base_nps
+  if base_nps < 800000:
     sys.stderr.write('This machine is too slow to run fishtest effectively - sorry!\n')
     sys.exit(1)
 
